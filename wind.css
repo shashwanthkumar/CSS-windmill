@@ -1,0 +1,126 @@
+h1{
+    text-align: center;
+    color:brown;
+}
+body{
+    background-color:black;
+    height:600px;
+    width:100%;
+}
+main{
+    background-color: aqua;
+    height:600px;
+    width:100%;
+
+}
+section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:28%;
+}
+.base{
+    display: flex;
+    align-items: center;
+}
+.square{
+    height:200px;
+    width:200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ball{
+    height:150px;
+    width:150px;
+    background-color:red;
+    border-radius: 50%;
+}
+.fans{
+    display: grid;
+}
+.fan1{
+    width:300px;
+    height:45px;
+    background-color: yellow;
+    border-radius: 20px;
+    position: absolute;
+    top:40%;
+    left:30.7%; 
+    transform: rotate(0deg);
+    transform-origin:100% 50%;
+}
+#fan2{
+    width:300px;
+    height:45px;
+    background-color: yellow;
+    border-radius: 20px;
+    position:absolute;
+    top:40%; 
+    left:50%; 
+    transform: rotate(-60deg);
+    transform-origin: 0% 50%;
+    
+}
+#fan3{
+    width:300px;
+    height:45px;
+    position: absolute;
+    top:40%; 
+    left:50%; 
+    background-color: yellow;
+    border-radius: 20px;
+    transform: rotate(60deg); 
+    transform-origin: 0% 50%;  
+}
+@keyframes lear{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}  
+.fan1{
+    animation: lear 5s linear 0s infinite ;
+}
+
+@keyframes roar {
+    100%{
+        transform: rotate(300deg);
+    }
+}
+#fan2{
+    animation: roar 5s linear 0s infinite ;
+}
+@keyframes fear {
+    0%{
+        transform: rotate(60deg);
+    }
+    100%{
+        transform: rotate(420deg);
+    }  
+} 
+#fan3{
+    animation: fear 5s linear 0s infinite ;
+}
+.ball2{
+    position: absolute;
+    top:34.5%;
+    left:47.7%;
+    width:70px;
+    height:70px;
+    background-color: brown;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#ball3{
+    width:10px;
+    height:10px;
+    background-color: red;
+}
